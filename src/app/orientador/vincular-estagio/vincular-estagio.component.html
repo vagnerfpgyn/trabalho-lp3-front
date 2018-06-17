@@ -1,0 +1,111 @@
+<div class="container">
+  <div class="card">
+    <div class="header">
+      Orientador
+    </div>
+    <div clss="card-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="matricula">Matricula</label>
+              <input type="text" (keyup)="setMatricula($event)" class="form-control" id="matricula" placeholder="Matricula">
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" (keyup)="setNome($event)" class="form-control" id="nome" placeholder="Nome completo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+    <div class="header">
+      Estagiário
+    </div>
+    <div clss="card-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="matricula">Matricula</label>
+              (
+              <input type="text" (keyup)="setMatricula($event)" class="form-control" id="matricula" placeholder="Matricula">
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" (keyup)="setNome($event)" class="form-control" id="nome" placeholder="Nome completo">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="dataDeInicio">Data de Início</label>
+              <input type="date" (keyup)="setDateIncio($event)" class="form-control" id="dataDeInicio">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="dataDeFim">Data de Fim</label>
+              <input type="date" (keyup)="setDateFim($event)" class="form-control" id="dataDeIncio">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <table class="table table-sm">
+        <thead>
+          <tr>
+            <th scope="col">Matricula</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">123</th>
+            <td>Joao da Silva Sauro</td>
+            <td>
+              <div style="word-spacing: 5px">
+                <a href="">Visualizar</a>
+                <a href="">Editrar</a>
+                <a href="">Excluir</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">123</th>
+            <td>Joao da Silva Sauro</td>
+            <td>
+              <div style="word-spacing: 5px">
+                <a href="">Visualizar</a>
+                <a href="">Editrar</a>
+                <a href="">Excluir</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">123</th>
+            <td>Joao da Silva Sauro</td>
+            <td>
+              <div style="word-spacing: 5px">
+                <a href="">Visualizar</a>
+                <a href="">Editrar</a>
+                <a href="">Excluir</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

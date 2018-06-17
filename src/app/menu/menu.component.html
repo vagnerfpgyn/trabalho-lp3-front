@@ -1,0 +1,35 @@
+<ul class="nav">
+    <li class="nav-item">
+        <a class="nav-link" [class.active]="monitorLink === 'home'" (click)="monitorLink = 'home'">HOME</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [class.active]="monitorLink === 'estagiario'" (click)="monitorLink = 'estagiario'">ESTAGIARIOS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [class.active]="monitorLink === 'orientadores'" (click)="monitorLink = 'orientadores'">ORIENTADORES</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [class.active]="monitorLink === 'consultas'" (click)="monitorLink = 'consultas'">CONSULTAS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [class.active]="monitorLink === 'relatorios'" (click)="monitorLink = 'relatorios'">RELATORIOS</a>
+    </li>
+</ul>
+
+<div [ngSwitch]="monitorLink">
+    <div *ngSwitchCase="'home'">
+        <app-home></app-home>
+    </div>
+    <div *ngSwitchCase="'estagiario'">
+    <app-lista-estagiario></app-lista-estagiario>
+    </div>
+    <div *ngSwitchCase="'orientadores'">
+        <app-orientador></app-orientador>
+    </div>
+    <div *ngSwitchCase="'consultas'">
+        <h1>Consultas</h1>
+    </div>
+    <div *ngSwitchCase="'relatorios'">
+        <h1>Relatorios</h1>
+    </div>
+</div>

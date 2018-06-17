@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="card">
+    <div class="header">
+      Orientador
+    </div>
+    <div class="card-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="matricula">Matricula</label>
+              <input type="text" (keyup)="setMatricula($event)" class="form-control" id="matricula" placeholder="Matricula">
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" (keyup)="setNome($event)" class="form-control" id="nome" placeholder="Nome completo">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="telefoneResidencial">Tel Residencial</label>
+              <input type="text" (keyup)="setTelResidencial($event)" class="form-control" id="telefoneResidencial" placeholder="(xx) xxxx-xxxx">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="celwpp">Celular/WhatsApp</label>
+              <input type="text" (keyup)="setCellWpp($event)" class="form-control" id="celwpp" placeholder="(xx) xxxx-xxxx">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" (keyup)="setEmail($event)" class="form-control" id="email" placeholder="fulano@email.com.br">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="titulacao">Titulação</label>
+              <select (change)="setFiltro"id="titulacao"class="form-control">
+                <option value="">Especialista</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="form-group">
+              <label for="idAbordagem">Abordagem</label>
+              <input type="text"id="idAbordagem"class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>    
+  </div> 
+</div>
+<div class="row">
+    <div class="col-sm-4 offset-sm-8">
+      <div class="form-group">
+          <button class="btn btn-primary">Editar</button>
+          <button class="btn btn-sucess">Salvar</button>
+          <button class="btn btn-danger">Cancelar</button>
+
+      </div>
+    </div>
+  </div>

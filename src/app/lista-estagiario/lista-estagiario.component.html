@@ -1,0 +1,29 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" [class.active]="monitorLink === 'cadastro'" (click)="monitorLink = 'cadastro'">
+      CADASTRO
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [class.active]="monitorLink === 'lista'" (click)="monitorLink = 'lista'">
+      LISTA
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [class.active]="monitorLink === 'horario'" (click)="monitorLink = 'horario'">
+      CADASTRO DE HORÁRIO
+    </a>
+  </li>
+</ul>
+
+<div [ngSwitch]="monitorLink">
+  <div *ngSwitchCase="'cadastro'">
+    <app-cadastro-estagiario></app-cadastro-estagiario>
+  </div>
+  <div *ngSwitchCase="'lista'">
+    <app-lista></app-lista>
+  </div>
+  <div *ngSwitchCase="'horario'">
+    <app-cad-horario></app-cad-horario>
+  </div>
+</div>

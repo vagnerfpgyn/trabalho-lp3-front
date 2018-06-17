@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="card">
+    <div class="header">
+      Lista de Estagiários
+    </div>
+    <div class="card-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for ="filtro">Filtro</label>
+              <select (change)="setFiltro($event)"id="filtro" class="form-control">
+                <option value="">Nome Completo</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="idText">Busca</label>
+              <input type="text"id="idText"class="form-control">
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label>'</label>
+              <button class="form-control">Buscar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th scope="col">Matricula</th>
+              <th scope="col">Nome Completo</th>
+              <th scope="col">Abordagem</th>
+              <th scope="col">Status</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Vagner Ferreira da Paixão</td>
+              <td>Neuropsicologia</td>
+              <td>Ativo</td>
+              <td>
+                <div style="word-spacing:5px">
+                  <a href="">Visualizar</a>
+                  <a href="">Editar</a>
+                  <a href="">Excluir</a>             
+
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+</div>

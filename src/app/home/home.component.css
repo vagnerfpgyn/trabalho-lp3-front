@@ -1,0 +1,9 @@
+.imagem{
+	width: 800px;
+	height: 400px;
+	border: 1px solid;
+	background-image: url(psico.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	
+}
