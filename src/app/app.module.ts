@@ -40,7 +40,7 @@ import { HttpClient, HttpHandler } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [EstagiarioService,HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
